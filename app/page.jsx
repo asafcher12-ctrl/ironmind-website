@@ -52,12 +52,12 @@ export default function Home() {
             <span className="hero-badge-text">🎯 עיצוב מקצועי</span>
           </div>
           <h1 className="hero-h1">
-            מסגרות עיצוביות לבית ולמשרד
+           סוגרים לכם את הפינה במסגרות ופרגולות
             <br />
             <span className="hero-accent">בעיצוב מדויק</span>
           </h1>
           <p className="hero-sub">
-            אנו משלבים אמנות ותפקוד ליצירת מסגרות יונiquות המעלות כל חלל
+           משלב המדידה ועד ההתקנה בשטח – אנחנו דואגים להכל. גדרות, שערים ופתרונות הצללה מאלומיניום בגימור נקי, מחירים הוגנים ועמידה בלוחות זמנים.
           </p>
           <div className="hero-btns">
             <Link href="#estimator" className="btn-primary">

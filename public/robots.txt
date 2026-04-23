@@ -3,4 +3,3 @@ Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-Sitemap: https://ironmind-frames.com/sitemap.xml

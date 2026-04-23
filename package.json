@@ -1,0 +1,24 @@
+{
+  "name": "ironmind-nextjs",
+  "version": "1.0.0",
+  "description": "IronMind - Professional Frame Design",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-sitemap": "node scripts/generate-sitemap.js"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "gray-matter": "^4.0.3",
+    "remark": "^15.0.0",
+    "remark-html": "^16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0"
+  }
+}

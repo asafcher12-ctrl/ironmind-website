@@ -104,12 +104,11 @@ const MATERIALS = [
 
 // Gallery images - replace src with actual project photos
 const GALLERY_IMAGES = [
-  { src: "/images/project1.jpg", alt: "פרגולת אלומיניום מרפסת" },
-  { src: "/images/project2.jpg", alt: "שער ברזל מודרני" },
-  { src: "/images/project3.jpg", alt: "פרגולת עץ וברזל" },
-  { src: "/images/project4.jpg", alt: "מעקה מדרגות" },
-  { src: "/images/project5.jpg", alt: "פרגולה גדולה" },
-  { src: "/images/project6.jpg", alt: "עבודת מסגרות מותאמת" },
+  { src: "/4.jpeg", alt: "פרגולת אלומיניום מרפסת" },
+  { src: "/5.jpeg", alt: "שער ברזל מודרני" },
+  { src: "/6.jpeg", alt: "פרגולת עץ וברזל" },
+  { src: "/7.jpeg", alt: "מעקה מדרגות" },
+  { src: "/8.jpeg", alt: "פרגולה גדולה" },
 ];
 
 // ─── HOOK: Intersection Observer for scroll animations ────────────────────────

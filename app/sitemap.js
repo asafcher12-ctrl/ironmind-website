@@ -1,9 +1,10 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://ironmind-frames.com';
+  // שימוש במשתנה הסביבה שהגדרת ב-Vercel עם fallback לכתובת האתר שלך
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ironmind-frames.com';
   
-  const routes = [
+  const routes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -16,17 +17,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.8,
     },
+    // הוספת נתיבים ממוקדי אזור (קיסריה וטבריה) לקידום הלידים
     {
-      url: `${baseUrl}/blog/choosing-perfect-frame`,
-      lastModified: new Date('2024-01-15'),
+      url: `${baseUrl}/fences-caesarea`,
+      lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/blog/trends-2024`,
-      lastModified: new Date('2024-01-20'),
+      url: `${baseUrl}/pergolas-tiberias`,
+      lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/price-list`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
   ];
 

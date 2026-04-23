@@ -3,11 +3,11 @@ import './globals.css';
 export const metadata = {
   title: 'אייירונמיינד - עיצוב מסגרות מקצועי',
   description: 'אייירונמיינד - עיצוב וייצור מסגרות מקצועיות לבתים ומשרדים',
-  metadataBase: new URL('https://ironmind-frames.com'),
+  metadataBase: new URL('https://ironmind-website-djk5.vercel.app'),
   openGraph: {
     title: 'אייירונמיינד - עיצוב מסגרות מקצועי',
     description: 'עיצוב וייצור מסגרות מקצועיות בחומרים איכותיים',
-    url: 'https://ironmind-frames.com',
+    url: 'https://ironmind-website-djk5.vercel.app',
     siteName: 'IronMind',
     images: [
       {

@@ -1,10 +1,8 @@
-import { MetadataRoute } from 'next';
-
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap() {
   // שימוש במשתנה הסביבה שהגדרת ב-Vercel עם fallback לכתובת האתר שלך
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ironmind-frames.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ironmind-website-djk5.vercel.app';
   
-  const routes: MetadataRoute.Sitemap = [
+  const routes = [
     {
       url: baseUrl,
       lastModified: new Date(),

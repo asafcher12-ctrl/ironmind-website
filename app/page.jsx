@@ -46,6 +46,8 @@ export default function Home() {
       <section className="hero">
         <div className="hero-overlay"></div>
         <div className="hero-grid-lines"></div>
+        
+        {/* Text Content */}
         <div className="hero-content">
           <div className="hero-badge">
             <span className="hero-dot"></span>
@@ -81,6 +83,11 @@ export default function Home() {
               <div className="stat-label">שביעות רצון</div>
             </div>
           </div>
+        </div>
+
+        {/* Hero Image */}
+        <div className="hero-image">
+          <img src="/7.jpeg" alt="פרויקט IronMind" />
         </div>
       </section>
 
@@ -132,33 +139,33 @@ export default function Home() {
         </div>
         <div className="gallery-grid">
           <div className="gallery-item">
-            <div style={{ background: '#1e293b', aspectRatio: '16/9' }}></div>
+            <img src="/4.jpeg" alt="פרגולה אלומיניום" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             <div className="gallery-overlay"></div>
-            <div className="gallery-caption">פרויקט 1</div>
+            <div className="gallery-caption">פרגולה אלומיניום</div>
             <div className="amber-bar"></div>
           </div>
           <div className="gallery-item">
-            <div style={{ background: '#0c1628' }}></div>
+            <img src="/5.jpeg" alt="שער ברזל" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             <div className="gallery-overlay"></div>
-            <div className="gallery-caption">פרויקט 2</div>
+            <div className="gallery-caption">שער ברזל מודרני</div>
             <div className="amber-bar"></div>
           </div>
           <div className="gallery-item">
-            <div style={{ background: '#334155' }}></div>
+            <img src="/6.jpeg" alt="פרגולה עץ וברזל" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             <div className="gallery-overlay"></div>
-            <div className="gallery-caption">פרויקט 3</div>
+            <div className="gallery-caption">פרגולה עץ וברזל</div>
             <div className="amber-bar"></div>
           </div>
           <div className="gallery-item">
-            <div style={{ background: '#475569', aspectRatio: '16/9' }}></div>
+            <img src="/7.jpeg" alt="מעקה מדרגות" style={{ width: '100%', height: '100%', objectFit: 'cover', aspectRatio: '16/9' }} />
             <div className="gallery-overlay"></div>
-            <div className="gallery-caption">פרויקט 4</div>
+            <div className="gallery-caption">מעקה מדרגות</div>
             <div className="amber-bar"></div>
           </div>
           <div className="gallery-item">
-            <div style={{ background: '#64748b' }}></div>
+            <img src="/8.jpeg" alt="פרגולה גדולה" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             <div className="gallery-overlay"></div>
-            <div className="gallery-caption">פרויקט 5</div>
+            <div className="gallery-caption">פרגולה גדולה</div>
             <div className="amber-bar"></div>
           </div>
         </div>

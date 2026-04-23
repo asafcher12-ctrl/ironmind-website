@@ -1,0 +1,161 @@
+/* Safe & Simple CSS for IronMind */
+
+:root {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --accent: #f59e0b;
+  --accent-hover: #fbbf24;
+  --border: #1e293b;
+  --text-muted: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Next.js מטפל בפונטים בדרך כלל ב-Layout, אז הגדרתי כאן Fallback */
+  font-family: 'Heebo', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  direction: rtl; /* עבודה מימין לשמאל כברירת מחדל */
+}
+
+/* Navigation */
+.nav {
+  background: rgba(15, 23, 42, 0.96);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-text {
+  color: var(--foreground);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.nav-cta {
+  background: var(--accent);
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-cta:hover {
+  background: var(--accent-hover);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--background);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px 24px;
+  max-width: 520px;
+}
+
+.hero-h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero-accent {
+  color: var(--accent);
+}
+
+.hero-sub {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--accent);
+  color: #0f172a;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* Grid & Cards */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.svc-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  background: #1e293b33;
+  transition: 0.3s;
+}
+
+.svc-card:hover {
+  border-color: var(--accent);
+}
+
+/* Forms */
+.form-input {
+  width: 100%;
+  background: #1e293b;
+  border: 1px solid var(--border);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-h1 {
+    font-size: 24px;
+  }
+}

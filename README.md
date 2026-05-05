@@ -1,170 +1,111 @@
-# IronMind - Professional Frame Design 🎨
+# לי-אור | אתר עסקי
 
-אתר Next.js RTL מדהים לחברת עיצוב מסגרות עם SEO מלא וביוג עם Markdown.
+אתר פרמיום לחברת לי-אור — מומחים בשילוב ברזל ועץ.
 
-## ✨ תכונות
+## מבנה הקבצים
 
-- ✅ **Next.js 14** - Framework מודרני וחזק
-- ✅ **עברית RTL** - כל הטקסטים בעברית עם כיוון נכון
-- ✅ **SEO מלא**
-  - Meta tags מותאמים
-  - Open Graph ו-Twitter Cards
-  - Schema.org LocalBusiness
-  - Sitemap ו-robots.txt
-- ✅ **בלוג עם Markdown** - כתוב מאמרים ב-Markdown
-- ✅ **טופס הצעת מחיר** - עם אינטגרציה WhatsApp
-- ✅ **דיזיין מדהים** - עם אנימציות חלקות
-- ✅ **Responsive Design** - עובד בכל מכשירים
-- ✅ **מוכן לVercel** - פרסום בלחיצה אחת
+```
+lior-website/
+├── index.html          # עמוד ראשי
+├── style.css           # עיצוב
+├── main.js             # JavaScript
+├── vercel.json         # הגדרות Vercel
+├── .gitignore
+└── images/             # תמונות הפרויקטים
+    ├── project1.jpeg
+    ├── project2.jpeg
+    ├── project3.jpeg
+    ├── project4.jpeg
+    ├── project5.jpeg
+    └── project6.jpeg
+```
 
-## 🚀 התחלה מהירה
-
-### 1. התקנת Dependencies
-\`\`\`bash
-npm install
-\`\`\`
-
-### 2. הרצה במצב פיתוח
-\`\`\`bash
-npm run dev
-\`\`\`
-
-הפתח [http://localhost:3000](http://localhost:3000) בדפדפן שלך.
-
-### 3. בנייה לייצור
-\`\`\`bash
-npm run build
-npm run start
-\`\`\`
-
-## 📝 הוספת מאמרים לבלוג
-
-1. צור קובץ \`.md\` חדש בתוך התיקייה \`posts/\`
-2. הוסף Frontmatter בחלק העליון:
-
-\`\`\`markdown
----
-title: "כותרת המאמר"
-date: "2024-01-15"
-excerpt: "תיאור קצר של המאמר"
 ---
 
-# תוכן המאמר שלך
+## הוראות העלאה לגיטהאב
 
-גוף הטקסט כאן...
-\`\`\`
+### שלב 1 — יצירת ריפוזיטורי
+1. היכנס ל-[github.com](https://github.com) ולחץ **New repository**
+2. תן שם: `lior-website`
+3. השאר **Public** → לחץ **Create repository**
 
-## 🔍 SEO
+### שלב 2 — העלאת הקבצים
+**אפשרות א׳ — דרך הדפדפן (קל יותר):**
+1. בריפוזיטורי הריק לחץ **uploading an existing file**
+2. גרור את כל תיקיית הפרויקט
+3. לחץ **Commit changes**
 
-אתר זה בנוי עם SEO בחזקה:
-
-- **Meta Tags** - כל עמוד עם תיאור ייחודי
-- **Open Graph** - שיתוף יפה בחברתיים
-- **LocalBusiness Schema** - כדי שחיפוש יהיה טוב
-- **Sitemap** - \`sitemap.xml\` לבעלי חיפוש
-- **Robots.txt** - הנחיות לעסקות הסריקה
-
-## 🐳 פרסום ב-Vercel
-
-### אפשרות 1: GitHub Connection (מומלץ)
-
-1. דחוף את הקוד ל-GitHub:
-\`\`\`bash
+**אפשרות ב׳ — דרך Git (מקצועי יותר):**
+```bash
+git init
 git add .
-git commit -m "Add Next.js IronMind website"
-git push origin nextjs-version
-\`\`\`
-
-2. היכנס ל-[vercel.com](https://vercel.com)
-3. לחץ "New Project"
-4. בחר את ה-Repository של IronMind
-5. Vercel יגלה את הקונפיגורציה ויפרוס באופן אוטומטי ✅
-
-### אפשרות 2: ישירה ממשוב
-
-1. התקן את ה-Vercel CLI:
-\`\`\`bash
-npm i -g vercel
-\`\`\`
-
-2. דחוף מהתיקייה של הפרויקט:
-\`\`\`bash
-vercel
-\`\`\`
-
-## 🔧 שינוי ההגדרות
-
-### שינוי מספר הטלפון שלך בWhatsApp
-
-בקובץ \`app/page.jsx\`, חפש את:
-\`\`\`jsx
-https://wa.me/972501234567
-\`\`\`
-
-שנה ל-:
-\`\`\`jsx
-https://wa.me/YOUR_PHONE_NUMBER
-\`\`\`
-
-### שינוי מטא דאטה
-
-בקובץ \`app/layout.jsx\`:
-\`\`\`jsx
-export const metadata = {
-  title: 'IronMind - עיצוב מסגרות מקצועי',
-  description: 'תיאור שלך כאן',
-  // ...
-};
-\`\`\`
-
-## 📦 מבנה הפרויקט
-
-\`\`\`
-ironmind-website/
-├── app/
-│   ├── layout.jsx          # Layout הראשי עם SEO
-│   ├── page.jsx            # דף הבית
-│   ├── globals.css         # סגנונות גלובליים
-│   ├── blog/
-│   │   └── page.jsx        # דף הבלוג
-│   └── api/
-│       └── blog/
-│           └── route.js    # API לבלוג
-├── posts/                  # מאמרי Markdown
-│   ├── choosing-perfect-frame.md
-│   └── trends-2024.md
-├── public/
-│   └── robots.txt          # SEO robots
-├── package.json
-├── next.config.js
-└── .gitignore
-\`\`\`
-
-## 🎨 ערכת הצבעים
-
-- **Primary**: #f59e0b (Amber)
-- **Background**: #0f172a (Dark Blue)
-- **Surface**: #0c1628 (Darker Blue)
-- **Text**: #f1f5f9 (Light Text)
-
-## 📱 תואמות
-
-- ✅ סמארטפונים (iOS ו-Android)
-- ✅ טابלטים
-- ✅ דסקטופ
-- ✅ RTL (עברית)
-
-## 🤝 תמיכה
-
-שאלות? צור קשר:
-- 📧 Email: info@ironmind.co.il
-- 📱 WhatsApp: [לחץ כאן](https://wa.me/972501234567)
-- 🌐 Website: https://ironmind-frames.com
-
-## 📄 רישיון
-
-הפרויקט הזה בעל רישיון MIT. ראה את הקובץ LICENSE לפרטים נוספים.
+git commit -m "Initial commit - לי-אור website"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/lior-website.git
+git push -u origin main
+```
 
 ---
 
-עוצב עם ❤️ באמצעות Next.js 14 ו-Vercel
+## הוראות Deploy ב-Vercel
+
+### שלב 1 — חיבור לגיטהאב
+1. היכנס ל-[vercel.com](https://vercel.com) עם חשבון GitHub
+2. לחץ **Add New → Project**
+3. בחר את הריפוזיטורי `lior-website`
+
+### שלב 2 — הגדרות Build
+- **Framework Preset:** `Other`
+- **Build Command:** (השאר ריק)
+- **Output Directory:** `.` (נקודה = ספרייה הראשית)
+- לחץ **Deploy**
+
+### שלב 3 — דומיין מותאם אישית (אופציונלי)
+1. ב-Vercel → Project Settings → Domains
+2. הוסף את הדומיין שלך
+3. עדכן את רשומות ה-DNS אצל ספק הדומיין
+
+---
+
+## הגדרות נדרשות לאחר העלאה
+
+### 1. עדכון מספר טלפון
+בקבצים `index.html` — חפש את:
+```
+050-000-0000
+```
+והחלף במספר האמיתי שלך.
+
+חפש גם את:
+```
+https://wa.me/972500000000
+```
+והחלף ב-`https://wa.me/972XXXXXXXXX` (המספר שלך ללא 0 בהתחלה).
+
+### 2. חיבור טופס יצירת קשר
+1. הירשם ל-[formspree.io](https://formspree.io) (חינמי עד 50 הגשות/חודש)
+2. צור טופס חדש → קבל Form ID
+3. ב-`index.html` החלף:
+   ```
+   YOUR_FORM_ID
+   ```
+   ב-ID שקיבלת (למשל: `xyzabcde`)
+
+### 3. תמונת Hero
+ניתן לשנות את תמונת הרקע של ה-Hero ב-`style.css`:
+```css
+.hero-img {
+  background: url('images/project1.jpeg') center/cover no-repeat;
+}
+```
+החלף `project1.jpeg` בתמונה המועדפת עליך.
+
+---
+
+## הוספת תמונות נוספות
+פשוט הוסף תמונות לתיקיית `images/` ועדכן את ה-HTML בסקציית הפורטפוליו.
+
+---
+
+## רישיון
+כל הזכויות שמורות © 2025 לי-אור

@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/blog/([a-z0-9-]+)$",
-      "dest": "/blog/post.html?slug=$1"
+      "dest": "/blog/$1.html"
     },
     {
       "src": "/(.*)",

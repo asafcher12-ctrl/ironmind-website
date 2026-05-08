@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/blog/([a-z0-9-]+)$",
+      "dest": "/blog/post.html?slug=$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://li-or.co.il/sitemap.xml

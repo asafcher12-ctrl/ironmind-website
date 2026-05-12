@@ -9,11 +9,11 @@
   --silver:         #8a8a8a;
   --silver-light:   #c0c0c0;
   --silver-pale:    #e8e6e1;
-  --cedar:          #8B5E3C;
-  --cedar-light:    #A67C52;
+  --cedar:          #8B4520;
+  --cedar-light:    #A85C2C;
   --cedar-pale:     #f0e8df;
   --white:          #fafaf8;
-  --gold:           #C9A96E;
+  --gold:           #C48B3E;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -47,6 +47,12 @@ nav {
   color: var(--white); letter-spacing: 1px;
 }
 .nav-logo span { color: var(--gold); }
+.nav-logo-img {
+  height: 46px;
+  width: auto;
+  border-radius: 4px;
+  display: block;
+}
 
 .nav-links {
   display: flex; gap: 1.5rem; list-style: none;

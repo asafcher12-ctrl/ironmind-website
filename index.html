@@ -80,19 +80,23 @@
 
 <!-- NAV -->
 <nav id="mainNav">
-  <a href="#home"><img src="images/logo Lior.png" alt="לי-אור" class="nav-logo-img" fetchpriority="high" loading="eager"/></a>
+  <a href="#home" class="nav-logo-wrap">
+    <img src="images/logo Lior.png" alt="לי-אור" class="nav-logo-img" fetchpriority="high" loading="eager"/>
+  </a>
   <ul class="nav-links">
     <li><a href="#services">שירותים</a></li>
     <li><a href="#portfolio">פרויקטים</a></li>
     <li><a href="#synergy">הסינרגיה</a></li>
     <li><a href="#reliability">אחריות</a></li>
-    <li><a href="#contact">צור קשר</a></li>
-    <li><a href="/blog/">בלוג</a></li>
   </ul>
+  <div class="nav-cta-group">
+    <a href="#contact" class="nav-link-cta">צור קשר</a>
+    <a href="/blog/" class="nav-link-cta">בלוג</a>
+  </div>
   <button class="nav-hamburger" id="hamburger" aria-label="תפריט">
     <span></span><span></span><span></span>
   </button>
-  <a href="https://wa.me/972500000000" class="nav-cta">קבל הצעת מחיר</a>
+  <a href="https://wa.me/972500000000" class="nav-quote-btn">קבל הצעת מחיר</a>
 </nav>
 
 <!-- MOBILE MENU -->
@@ -111,7 +115,29 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-tag">מומחי ברזל ועץ מאז 2005</div>
-    <h1>לי-אור:<br/><em>שילוב ברזל ועץ</em><br/>בגימור מושלם</h1>
+    <div class="hero-headline-wrap">
+      <div class="hero-tree-wrap" aria-hidden="true">
+        <svg class="hero-tree-svg" viewBox="0 0 80 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M38 165 L38 108 Q35 97 28 87 L35 81 Q30 68 32 54 Q37 39 40 32 Q43 39 48 54 Q50 68 45 81 L52 87 Q45 97 42 108 L42 165 Z" fill="currentColor"/>
+          <path d="M35 100 Q17 88 7 71 Q22 68 33 82 Z" fill="currentColor" opacity="0.75"/>
+          <path d="M45 94 Q63 82 73 65 Q58 62 47 76 Z" fill="currentColor" opacity="0.75"/>
+          <path d="M34 84 Q13 70 5 50 Q21 52 33 68 Z" fill="currentColor" opacity="0.6"/>
+          <path d="M46 78 Q67 64 75 44 Q59 46 47 62 Z" fill="currentColor" opacity="0.6"/>
+          <circle cx="40" cy="63" r="26" fill="currentColor" opacity="0.27"/>
+          <circle cx="19" cy="75" r="20" fill="currentColor" opacity="0.25"/>
+          <circle cx="61" cy="73" r="20" fill="currentColor" opacity="0.25"/>
+          <circle cx="28" cy="47" r="22" fill="currentColor" opacity="0.31"/>
+          <circle cx="53" cy="45" r="21" fill="currentColor" opacity="0.31"/>
+          <circle cx="40" cy="34" r="23" fill="currentColor" opacity="0.37"/>
+          <circle cx="25" cy="61" r="16" fill="currentColor" opacity="0.21"/>
+          <circle cx="56" cy="59" r="16" fill="currentColor" opacity="0.21"/>
+          <circle cx="40" cy="20" r="18" fill="currentColor" opacity="0.43"/>
+          <circle cx="29" cy="31" r="14" fill="currentColor" opacity="0.34"/>
+          <circle cx="52" cy="29" r="14" fill="currentColor" opacity="0.34"/>
+        </svg>
+      </div>
+      <h1><span class="brand-name">לי-אור:</span><br/><em>שילוב ברזל ועץ</em><br/>בגימור מושלם</h1>
+    </div>
     <p class="hero-sub">תכנון וביצוע ברמת גימור מושלמת, עם אחריות ושקיפות מלאה. אנחנו בונים לאורך שנים — לא רק לרגע.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">קבל הצעת מחיר</a>

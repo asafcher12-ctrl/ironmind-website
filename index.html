@@ -68,16 +68,19 @@
 }
 </script>
 
+<link rel="preload" as="image" href="images/project1.jpeg" fetchpriority="high"/>
+<link rel="preload" as="image" href="images/logo Lior.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;900&family=Heebo:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;900&family=Heebo:wght@400;500&display=swap"/></noscript>
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="mainNav">
-  <div class="nav-logo"><span>לי</span>-אור</div>
+  <a href="#home"><img src="images/logo Lior.png" alt="לי-אור" class="nav-logo-img" fetchpriority="high" loading="eager"/></a>
   <ul class="nav-links">
     <li><a href="#services">שירותים</a></li>
     <li><a href="#portfolio">פרויקטים</a></li>
@@ -104,7 +107,7 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-img"></div>
+  <img src="images/project1.jpeg" alt="" class="hero-img" fetchpriority="high" loading="eager" width="1920" height="1080" decoding="async"/>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-tag">מומחי ברזל ועץ מאז 2005</div>

@@ -12,11 +12,11 @@
   --silver:         #8a8a8a;
   --silver-light:   #c0c0c0;
   --silver-pale:    #e8e6e1;
-  --cedar:          #8B5E3C;
-  --cedar-light:    #A67C52;
+  --cedar:          #8B4520;
+  --cedar-light:    #A85C2C;
   --cedar-pale:     #f0e8df;
   --white:          #fafaf8;
-  --gold:           #C9A96E;
+  --gold:           #C48B3E;
 }
 
 html { scroll-behavior: smooth; }
@@ -51,6 +51,12 @@ nav.scrolled { background: rgba(18,18,18,0.98); }
   color: var(--white); letter-spacing: 1px;
 }
 .nav-logo span { color: var(--gold); }
+.nav-logo-img {
+  height: 46px;
+  width: auto;
+  border-radius: 4px;
+  display: block;
+}
 
 .nav-links {
   display: flex; gap: 1.5rem; list-style: none;
@@ -107,7 +113,8 @@ nav.scrolled { background: rgba(18,18,18,0.98); }
 }
 .hero-img {
   position: absolute; inset: 0;
-  background: url('images/project1.jpeg') center/cover no-repeat;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
   opacity: .35;
 }
 .hero-overlay {
